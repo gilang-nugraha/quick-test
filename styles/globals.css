@@ -46,7 +46,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+.MuiTypography-root,
+.MuiButtonBase-root {
+  font-family: "Lato", sans-serif;
+}
 .MuiPopper-root .MuiTooltip-tooltip {
   background-color: transparent !important  ;
   font-size: 14px;
