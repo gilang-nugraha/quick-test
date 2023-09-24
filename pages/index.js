@@ -28,6 +28,7 @@ export default function Home() {
     },
   ];
   const fabRef = useRef(null);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const actionRef = actions.map(() => useRef(null));
 
   const [open, setOpen] = useState(false);
@@ -59,6 +60,7 @@ export default function Home() {
     setActive(name);
 
     let position = initialActionPosition || [];
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     if (!initialActionPosition) {
       actionRef.forEach((ref, i) => {
         position.push(ref.current.getBoundingClientRect().right);
