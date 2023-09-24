@@ -27,7 +27,7 @@ export default function Home() {
       hoverColor: theme.palette.indicator.orange,
     },
   ];
-  const fabRef = useRef();
+  const fabRef = useRef(null);
   const actionRef = actions.map(() => useRef(null));
 
   const [open, setOpen] = useState(false);
